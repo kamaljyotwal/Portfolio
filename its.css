@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Flamenco&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dynalight&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********************* NavBar Styling*********************************/
+.navbar {
+  width: 100%;
+  background-color: #3a3a3a;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+nav ul {
+  margin-right: 80px;
+}
+nav ul li {
+  list-style: none;
+  float: right;
+  padding: 14px 0;
+  color: #fff;
+}
+nav ul li:hover {
+  background-color: #f8d2bf;
+  color: #363c3f;
+}
+nav ul li a:hover {
+  color: #363c3f;
+}
+nav ul li a {
+  color: #fff;
+  font-family: roboto;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 14px 22px;
+}
+/***********************HERO********************************/
+
+#welcome-section {
+  height: 100vh;
+  margin: 0px 0 0 0;
+  background-image: url("./Images/heroimage.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /* margin-top: 20px; */
+}
+
+h1 {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Flamenco", cursive;
+  font-size: 3.8rem;
+  font-weight: lighter;
+  color: #ff9b68;
+}
+h4 {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  font-size: 2.6rem;
+  transform: translate(-50%, -50%);
+  font-family: roboto;
+  font-weight: 350;
+  color: white;
+}
+h5 {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  font-family: roboto;
+  font-weight: 200;
+  font-size: 2.2rem;
+  color: white;
+}
+
+/*---------------------- Project Section------------------------ */
+#projects {
+  height: 110vh;
+  border: 1px solid red;
+}
+#projects > p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: roboto;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.grid-container {
+  /* background-color: rgb(243, 242, 228); */
+  /* background: rgb(226, 226, 226);
+  background: linear-gradient(
+    140deg,
+    rgba(243, 243, 243, 1) 32%,
+    rgba(146, 146, 146, 1) 88%
+  ); */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 4rem;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.project-tile {
+  border: 2px solid rgb(80, 80, 80);
+  /* height: 15em; */
+  width: 21rem;
+  /* height: 16rem; */
+}
+.project-tile h3 {
+  background-color: #f1cbb9;
+  padding: 0.8rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: roboto;
+  text-align: center;
+}
+
+.project-tile img {
+  object-fit: cover;
+  width: 100%;
+  z-index: 2;
+}
+/* ----------------------------------------- */
+@media (min-width: 320px) and (max-width: 480px) {
+}
